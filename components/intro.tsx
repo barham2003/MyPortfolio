@@ -1,49 +1,8 @@
 "use client";
-import { clsx } from "clsx";
+import { HackerTextEffect } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
 import React, { useState, useEffect } from "react";
-
-const HackerTextEffect = ({
-  children,
-  intervalDuration,
-  glitchProbability,
-  className = "text-4xl md:text-6xl",
-}: any) => {
-  const [text, setText] = useState("");
-
-  useEffect(() => {
-    let index = 0;
-
-    const intervalId = setInterval(() => {
-      const randomChar =
-        Math.random() < glitchProbability
-          ? String.fromCharCode(Math.floor(Math.random() * 94) + 33)
-          : children[index];
-
-      const newText = text.slice(0, index) + randomChar + text.slice(index + 1);
-      setText(newText);
-
-      index = (index + 1) % children.length;
-    }, intervalDuration);
-
-    return () => clearInterval(intervalId);
-  }, [text, children, intervalDuration, glitchProbability]);
-
-  return (
-    <motion.span
-      style={{
-        fontFamily: "monospace",
-        whiteSpace: "pre",
-        overflow: "hidden",
-        fontWeight: "bold",
-      }}
-      className={className}
-    >
-      {text}
-    </motion.span>
-  );
-};
 
 export default function Intro() {
   return (
@@ -58,11 +17,7 @@ export default function Intro() {
       id="home"
     >
       <h1 className=" text-7xl font-bold">
-        <HackerTextEffect
-          intervalDuration={2}
-          glitchProbability={0.1}
-          className="text-4xl md:text-7xl md:font-bold"
-        >
+        <HackerTextEffect className="text-4xl md:text-7xl md:font-bold">
           Hello, Friend.
         </HackerTextEffect>
       </h1>
@@ -82,11 +37,7 @@ export default function Intro() {
           Embarking on the exciting journey of web development, I've become more
           than just a coder; I'm a creator, a problem solver, and a{" "}
           <span className="">
-            <HackerTextEffect
-              intervalDuration={3}
-              glitchProbability={0.04}
-              className="text-xl font-extrabold md:text-4xl"
-            >
+            <HackerTextEffect className="text-xl font-extrabold md:text-4xl">
               relentless
             </HackerTextEffect>
           </span>{" "}

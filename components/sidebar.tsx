@@ -5,7 +5,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ModeToggle } from "./toggle-mode";
 import { motion } from "framer-motion";
 import { sections } from "@/lib/data";
-import { BiLocationPlus, BiPhone, BiSolidLocationPlus } from "react-icons/bi";
+import { BiPhone } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 
 export default function Sidebar() {

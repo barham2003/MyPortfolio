@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 
 export const HackerTextEffect = ({
   children,
-  intervalDuration = 2,
-  glitchProbability = 0.04,
-  fontSize = "3rem",
+  intervalDuration = 3,
+  glitchProbability = 0.05,
+  className,
 }: any) => {
   const [text, setText] = useState("");
 
@@ -30,12 +30,12 @@ export const HackerTextEffect = ({
   return (
     <motion.span
       style={{
-        fontSize,
         fontFamily: "monospace",
         whiteSpace: "pre",
         overflow: "hidden",
         fontWeight: "bold",
       }}
+      className={className}
     >
       {text}
     </motion.span>
