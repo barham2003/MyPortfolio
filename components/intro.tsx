@@ -1,8 +1,6 @@
 "use client";
+import { clsx } from "clsx";
 import { motion } from "framer-motion";
-interface GlitchProps {
-  text: string;
-}
 
 import React, { useState, useEffect } from "react";
 
@@ -10,7 +8,7 @@ const HackerTextEffect = ({
   children,
   intervalDuration,
   glitchProbability,
-  fontSize,
+  className = "text-4xl md:text-6xl",
 }: any) => {
   const [text, setText] = useState("");
 
@@ -35,12 +33,12 @@ const HackerTextEffect = ({
   return (
     <motion.span
       style={{
-        fontSize,
         fontFamily: "monospace",
         whiteSpace: "pre",
         overflow: "hidden",
         fontWeight: "bold",
       }}
+      className={className}
     >
       {text}
     </motion.span>
@@ -49,20 +47,21 @@ const HackerTextEffect = ({
 
 export default function Intro() {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: -200 }}
       animate={{
         opacity: 100,
         y: 0,
         transition: { type: "tween", delay: 1 },
       }}
-      className="flex flex-col gap-4 px-8 md:px-20 "
+      className="flex scroll-mt-20 flex-col gap-4"
+      id="home"
     >
       <h1 className=" text-7xl font-bold">
         <HackerTextEffect
-          fontSize="3rem"
           intervalDuration={2}
           glitchProbability={0.1}
+          className="text-4xl md:text-7xl md:font-bold"
         >
           Hello, Friend.
         </HackerTextEffect>
@@ -82,8 +81,12 @@ export default function Intro() {
           </span>{" "}
           Embarking on the exciting journey of web development, I've become more
           than just a coder; I'm a creator, a problem solver, and a{" "}
-          <span className="text-4xl font-extrabold ">
-            <HackerTextEffect intervalDuration={3} glitchProbability={0.04}>
+          <span className="">
+            <HackerTextEffect
+              intervalDuration={3}
+              glitchProbability={0.04}
+              className="text-xl font-extrabold md:text-4xl"
+            >
               relentless
             </HackerTextEffect>
           </span>{" "}
@@ -93,6 +96,6 @@ export default function Intro() {
           crafting online experiences that leave a lasting impact.
         </p>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }

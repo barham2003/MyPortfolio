@@ -17,10 +17,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body
-          className=" selection:bg-primary/10 md:flex "
-          suppressHydrationWarning
-        >
+        <body className="selection:bg-primary/10 md:flex ">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
