@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export const HackerTextEffect = ({
   children,
   intervalDuration = 2,
-  glitchProbability = 0.1,
+  glitchProbability = 0.04,
   fontSize = "3rem",
 }: any) => {
   const [text, setText] = useState("");

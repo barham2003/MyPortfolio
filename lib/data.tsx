@@ -7,7 +7,7 @@ import { MdOutlineEmail } from "react-icons/md";
 export const sections = [
   { name: "Home", icon: <IoHomeOutline size="20px" />, ref: "#home" },
   { name: "Skills", icon: <RiListSettingsFill size="20px" />, ref: "#skills" },
-  { name: "Projects", icon: <CgToolbox size="20px" />, ref: "#" },
+  { name: "Projects", icon: <CgToolbox size="20px" />, ref: "#projects" },
   { name: "About", icon: <IoPersonOutline size="20px" />, ref: "#" },
   { name: "Contact", icon: <MdOutlineEmail size="20px" />, ref: "#" },
 ] as const;
@@ -48,4 +48,32 @@ export const skills = [
   { name: "PostgreSql", icon: <DiPostgresql /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "GitHub", icon: <FaGithub /> },
+] as const;
+
+import MathCenter from "@/public/math.jpg";
+import SVGImage from "@/public/ssvg.jpg";
+import BreakingB from "@/public/breakingb.jpg";
+
+const lorem =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quo illum? Temporibus eius eligendi consequuntur? Modi sunt at nostrum, commodi ratione voluptatibus eum molestiae libero assumenda nobis, aperiam officiis!";
+
+export const myProjects = [
+  {
+    name: "Math Center",
+    description: lorem,
+    image: MathCenter,
+    link: "https://svg-web.pages.dev",
+  },
+  {
+    name: "Smart Volunteers Group",
+    description: lorem,
+    image: SVGImage,
+    link: "https://svg-web.pages.dev",
+  },
+  {
+    name: "Breaking Bad Page",
+    description: lorem,
+    image: BreakingB,
+    link: "https://breakingb.pages.dev",
+  },
 ] as const;
