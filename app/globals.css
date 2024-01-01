@@ -79,3 +79,7 @@ html {
   font-family: "Raleway";
   @apply !scroll-smooth;
 }
+
+h2 {
+  @apply text-4xl md:text-6xl md:font-extrabold;
+}
