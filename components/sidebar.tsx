@@ -5,7 +5,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ModeToggle } from "./toggle-mode";
 import { motion } from "framer-motion";
 import { sections } from "@/lib/data";
-import { BiLocationPlus, BiSolidLocationPlus } from "react-icons/bi";
+import { BiLocationPlus, BiPhone, BiSolidLocationPlus } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 
 export default function Sidebar() {
@@ -26,6 +26,10 @@ export default function Sidebar() {
           Iraq - Kirkuk
           <IoLocation />
         </span>
+        <span className="flex items-center gap-2 font-sans text-lg opacity-45">
+          +964 750 833 06 77
+          <BiPhone />
+        </span>
         <div className="mt-4 flex gap-4">
           <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
           <BsLinkedin
@@ -38,7 +42,7 @@ export default function Sidebar() {
         {sections.map((section) => (
           <Link
             href={section.ref}
-            className=" flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 md:w-5/6 md:justify-center md:gap-2"
+            className=" flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 md:w-5/6 md:justify-center md:gap-2  "
             key={section.name}
           >
             {section.icon}
