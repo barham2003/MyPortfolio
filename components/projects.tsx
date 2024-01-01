@@ -40,7 +40,7 @@ export default function Projects() {
                     <CardContent className="flex flex-col items-center justify-start gap-4 p-4 md:flex-col md:justify-start md:gap-16 md:p-8">
                       <h3 className="font-bold md:text-2xl">{project.name}</h3>
                       <Image
-                        className="rounded-lg border-2 hover:border-white md:h-[17rem] md:w-[34rem]"
+                        className="rounded-lg border-2 grayscale transition-all delay-150 hover:border-white hover:grayscale-0 md:h-[17rem] md:w-[34rem]"
                         src={project.image}
                         alt=""
                         quality={60}
