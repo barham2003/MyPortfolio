@@ -39,6 +39,7 @@ const HackerTextEffect = ({
         fontFamily: "monospace",
         whiteSpace: "pre",
         overflow: "hidden",
+        fontWeight: "bold",
       }}
     >
       {text}
@@ -59,7 +60,7 @@ export default function Intro() {
     >
       <h1 className=" text-7xl font-bold">
         <HackerTextEffect
-          fontSize="2rem"
+          fontSize="3rem"
           intervalDuration={2}
           glitchProbability={0.1}
         >
@@ -67,9 +68,8 @@ export default function Intro() {
         </HackerTextEffect>
       </h1>
       <div className="mt-5 h-full md:mt-20">
-        <p className=" text-md  text-pretty text-justify font-semibold leading-10 tracking-wide md:text-2xl">
-          lore I'm <span className="font-extrabold"> Barham</span>, a passionate
-          and{" "}
+        <p className=" text-pretty text-justify text-xl font-semibold leading-10 tracking-wide md:text-4xl">
+          I'm <span className="font-extrabold"> Barham</span>, a passionate and{" "}
           <span className="font-bold underline underline-offset-4">
             creative web developer
           </span>{" "}
@@ -82,7 +82,7 @@ export default function Intro() {
           </span>{" "}
           Embarking on the exciting journey of web development, I've become more
           than just a coder; I'm a creator, a problem solver, and a{" "}
-          <span className="text-xl font-extrabold ">
+          <span className="text-4xl font-extrabold ">
             <HackerTextEffect intervalDuration={3} glitchProbability={0.04}>
               relentless
             </HackerTextEffect>

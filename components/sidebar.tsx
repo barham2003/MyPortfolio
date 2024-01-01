@@ -15,7 +15,7 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border border-b-secondary/80 backdrop-blur md:fixed md:-left-2 md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r-secondary/80 md:py-10 dark:bg-[#09090b]/80"
+      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-r-2 border-r-secondary/80 backdrop-blur md:fixed md:-left-2 md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r-secondary/80 md:py-10 dark:bg-[#09090b]/80"
     >
       <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center">
         <span className="font-bold  md:text-xl">Barham Khalid</span>
@@ -32,7 +32,7 @@ export default function Sidebar() {
         {sections.map((section) => (
           <Link
             href="#"
-            className=" flex items-center rounded-md bg-secondary/80 p-2 text-base font-semibold transition-all hover:bg-secondary/50 md:w-5/6 md:justify-center md:gap-2"
+            className=" flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 md:w-5/6 md:justify-center md:gap-2"
             key={section.name}
           >
             {section.icon}
