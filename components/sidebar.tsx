@@ -5,6 +5,8 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { ModeToggle } from "./toggle-mode";
 import { motion } from "framer-motion";
 import { sections } from "@/lib/data";
+import { BiLocationPlus, BiSolidLocationPlus } from "react-icons/bi";
+import { IoLocation } from "react-icons/io5";
 
 export default function Sidebar() {
   return (
@@ -20,6 +22,10 @@ export default function Sidebar() {
       <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center">
         <span className="font-bold  md:text-xl">Barham Khalid</span>
         <span className="text-lg opacity-45">Web Developer</span>
+        <span className="flex items-center gap-2 text-lg opacity-45">
+          Iraq - Kirkuk
+          <IoLocation />
+        </span>
         <div className="mt-4 flex gap-4">
           <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
           <BsLinkedin
