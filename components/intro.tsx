@@ -16,7 +16,7 @@ export default function Intro() {
         y: 0,
         transition: { type: "tween", delay: 1 },
       }}
-      className="flex scroll-mt-20 flex-col gap-12"
+      className="flex scroll-mt-20 flex-col items-center justify-center gap-12"
       id="home"
     >
       <h1 className="text-7xl font-bold">
@@ -35,7 +35,7 @@ export default function Intro() {
           <span className="bg-secondary/20 font-normal underline">
             creativity
           </span>{" "}
-          to deliver innovative digital solutions. I'm{" "}
+          to deliver innovative digital solutions.{" "}
         </p>
 
         <div className=" flex flex-col items-start gap-2 py-10 md:hidden">
