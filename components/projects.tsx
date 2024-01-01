@@ -22,7 +22,13 @@ export default function Projects() {
       <HeaderSection>My Projects</HeaderSection>
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 100, transition: { delay: 0.5 } }}
+        whileInView={{
+          opacity: 100,
+          transition: { delay: 0.8, duration: 0.6 },
+        }}
+        viewport={{
+          once: true,
+        }}
         className="w-5/6 md:w-3/4 "
       >
         <Carousel>
