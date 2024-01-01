@@ -62,7 +62,7 @@ export const myProjects = [
     name: "Math Center",
     description: lorem,
     image: MathCenter,
-    link: "https://svg-web.pages.dev",
+    link: "https://mathcenter.pages.dev",
   },
   {
     name: "Smart Volunteers Group",
