@@ -111,14 +111,16 @@ import { MdSimCardDownload } from "react-icons/md";
 export const socials = [
   {
     name: "github",
-    link: "linkedin.com/in/barham-khalid-khorshed-7abab8267/",
+    link: "https://github.com/barham3002",
+
     icon: (
       <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
     ),
   },
   {
     name: "linkedin",
-    link: "https://github.com/barham3002",
+    link: "https://linkedin.com/in/barham-khalid-khorshed-7abab8267/",
+
     icon: (
       <BsLinkedin size={"30px"} className="transition-all hover:opacity-75" />
     ),
