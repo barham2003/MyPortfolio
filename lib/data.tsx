@@ -126,7 +126,7 @@ export const socials = [
   },
   {
     name: "CV",
-    link: "#",
+    link: "/barham.pdf",
     icon: (
       <MdSimCardDownload
         size={"30px"}
