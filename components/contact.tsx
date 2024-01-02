@@ -3,24 +3,15 @@
 import { sendEmail } from "@/actions";
 import HeaderSection from "@/lib/header-section";
 import { motion } from "framer-motion";
-import React, { useEffect } from "react";
-import { useFormState } from "react-dom";
+import React, { InputHTMLAttributes } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { useToast } from "./ui/use-toast";
-const initialState = { message: "" };
+import { toast } from "sonner";
+
+const initialState = { message: "", state: "" };
 
 export default function Contact() {
-  const [{ message }, formAction] = useFormState(sendEmail, initialState);
-  const { toast } = useToast();
-
-  useEffect(() => {
-    if (message) {
-      toast({ description: message });
-    }
-  }, [message, toast]);
-
   return (
     <section
       className="flex scroll-mt-24 flex-col justify-start gap-4 md:scroll-mt-12"
@@ -28,7 +19,15 @@ export default function Contact() {
     >
       <HeaderSection>Contact Me</HeaderSection>
       <motion.form
-        action={formAction}
+        action={async (formData) => {
+          const { message } = await sendEmail(formData);
+          toast(message, {
+            action: {
+              label: "Close",
+              onClick: () => console.log(""),
+            },
+          });
+        }}
         initial={{
           opacity: 0,
         }}

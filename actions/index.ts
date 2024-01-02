@@ -5,13 +5,15 @@ const resend = new Resend(process.env.RESEND_CODE);
 
 interface FormState {
   message: string;
+  state: string;
 }
 
-export async function sendEmail(formState: FormState, formData: FormData) {
+export async function sendEmail(formData: FormData) {
   const snderMessage = formData.get("message") as string;
   const senderEmail = formData.get("senderEmail") as string;
 
-  if (!snderMessage || !senderEmail) return { message: "Validation Failed" };
+  if (!snderMessage || !senderEmail)
+    return { message: "Validation Failed", state: "error" };
 
   try {
     await resend.emails.send({
@@ -22,9 +24,9 @@ export async function sendEmail(formState: FormState, formData: FormData) {
       text: snderMessage,
     });
 
-    return { message: "Email successfully sent!" };
+    return { message: "Email successfully sent!", state: "done" };
   } catch (e) {
     console.log(e);
-    return { message: "Something went wrong" };
+    return { message: "Something went wrong", state: "error" };
   }
 }
