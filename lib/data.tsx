@@ -79,21 +79,21 @@ export const myProjects: eachSkill[] = [
   {
     name: "Smart Volunteers Group",
     description:
-      "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database. and also the system to manage the database is created by me. tools that are used in both are: Node.JS, ExpressJs, ReactJs, NextUI, TanStack Query, MongoDB, Tailwind, etc....",
+      "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database. and also the system to manage the database is provided as well. tools that are used in both are: Node.JS, ExpressJs, ReactJs, NextUI, TanStack Query, MongoDB, Tailwind, etc....",
     image: SVGImage,
     link: "https://svg-web.pages.dev",
   },
   {
     name: "Breaking Bad Page",
     description:
-      "A simple blog and quote generator from Breaking Bad web app, which I built in the beggining of my journey in Web Development. Tools that I used are: Node.JS, ExpressJs, MongoDB, ReactJS, Bootstrap, etc.....",
+      "A simple blog and quote generator from Breaking Bad web app, which I built in the beggining of my journey in Web Development. Tools that used are: Node.JS, ExpressJs, MongoDB, ReactJS, Bootstrap, etc.....",
     image: BreakingB,
     link: "https://breakingb.pages.dev",
   },
   {
     name: "Task Manager",
     description:
-      "A web applicatoin which helps you to manage your daily tasks, based on time, categories. for this one just avoided to use any component libraries and I only made everything from scratch with tailwind. the tools that used to make this web app are: Node.JS, ExpresJs, MongoDB, ReactJS, Tailwind...",
+      "A web applicatoin which helps you to manage your daily tasks, based on time, categories. for this one I avoided to use any component libraries and I made everything from scratch only with tailwind. the tools that used to make this web app are: Node.JS, ExpresJs, MongoDB, ReactJS, Tailwind...",
     image: TaskssImg,
     link: "https://tasks-d5t.pages.dev",
   },
