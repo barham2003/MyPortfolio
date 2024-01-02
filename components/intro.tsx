@@ -16,7 +16,7 @@ export default function Intro() {
         y: 0,
         transition: { type: "tween", delay: 1 },
       }}
-      className="flex scroll-mt-20 flex-col items-center justify-center gap-12"
+      className="flex scroll-mt-20 flex-col items-center justify-center md:gap-12"
       id="home"
     >
       <h1 className="text-7xl font-bold">

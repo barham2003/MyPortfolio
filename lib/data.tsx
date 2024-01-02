@@ -10,7 +10,7 @@ export const sections = [
   { name: "Skills", icon: <TbTools size="20px" />, ref: "#skills" },
   { name: "Projects", icon: <CgToolbox size="20px" />, ref: "#projects" },
   { name: "About", icon: <IoPersonOutline size="20px" />, ref: "#about" },
-  { name: "Contact", icon: <MdOutlineEmail size="20px" />, ref: "#" },
+  { name: "Contact", icon: <MdOutlineEmail size="20px" />, ref: "#contact" },
 ] as const;
 
 import { FaReact } from "react-icons/fa";
