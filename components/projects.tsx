@@ -46,10 +46,7 @@ export default function Projects() {
                         quality={60}
                       />
                       <p className=" text-justify text-sm md:text-base">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates maiores vitae veritatis eaque quas quibusdam
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptates maiores vitae veritatis eaque quas quibusdam
+                        {project.description}
                       </p>
                       <a target="_blank" href={project.link}>
                         Go to it

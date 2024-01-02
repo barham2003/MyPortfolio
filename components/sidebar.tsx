@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { ModeToggle } from "./toggle-mode";
 import { motion } from "framer-motion";
-import { sections } from "@/lib/data";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { sections, socials } from "@/lib/data";
 import { BiPhone } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 
@@ -17,15 +16,13 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-secondary
-       bg-white md:fixed md:-left-2 md:h-full md:w-1/5 md:flex-col md:flex-nowrap
-        md:gap-4 md:border-r md:border-r-primary/20 md:py-10 dark:bg-[#09090b]"
+      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-secondary bg-white md:fixed md:-left-2 md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r md:border-r-primary/20 md:py-10 dark:bg-[#09090b]"
     >
       <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center">
         <span className="font-bold  md:text-xl">Barham Khalid</span>
         <span className="text-lg opacity-45">Web Developer</span>
         <span className="flex items-center gap-2 text-lg opacity-45">
-          Iraq - Kirkuk
+          Sulaymaniah
           <IoLocation />
         </span>
         <span className="flex items-center gap-2 font-sans text-lg opacity-45">
@@ -33,11 +30,11 @@ export default function Sidebar() {
           <BiPhone />
         </span>
         <div className="mt-4 flex gap-4">
-          <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
-          <BsLinkedin
-            size={"30px"}
-            className="transition-all hover:opacity-75"
-          />
+          {socials.map((social) => (
+            <a key={social.name} href={social.link} target="_blank">
+              {social.icon}
+            </a>
+          ))}
         </div>
       </div>
       <div className="flex flex-wrap items-center justify-center gap-2 p-2 md:h-3/5 md:flex-col md:items-center md:gap-4 md:p-0">

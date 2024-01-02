@@ -2,10 +2,10 @@
 import { HackerTextEffect } from "@/lib/hooks";
 import { motion } from "framer-motion";
 
-import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { BiPhone } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
+import { socials } from "@/lib/data";
 
 export default function Intro() {
   return (
@@ -39,15 +39,11 @@ export default function Intro() {
         <div className=" flex flex-col items-start gap-2 py-10 md:hidden">
           <div className="mt-4 flex gap-4">
             <div className="my-2 flex gap-2">
-              <BsGithub
-                size={"30px"}
-                className="transition-all hover:opacity-75"
-              />
-
-              <BsLinkedin
-                size={"30px"}
-                className="transition-all hover:opacity-75"
-              />
+              {socials.map((social) => (
+                <a key={social.name} href={social.link} target="_blank">
+                  {social.icon}
+                </a>
+              ))}
             </div>
           </div>
           <span className="flex items-center gap-2 font-sans text-lg opacity-45">

@@ -56,6 +56,7 @@ import SVGImage from "@/public/ssvg.jpg";
 import BreakingB from "@/public/breakingb.jpg";
 import TaskssImg from "@/public/taskss.jpg";
 import { StaticImageData } from "next/image";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const lorem: any =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quo illum? Temporibus eius eligendi consequuntur? Modi sunt at nostrum, commodi ratione voluptatibus eum molestiae libero assumenda nobis, aperiam officiis!";
@@ -70,25 +71,29 @@ interface eachSkill {
 export const myProjects: eachSkill[] = [
   {
     name: "Math Center",
-    description: lorem,
+    description:
+      "A web application which the students of AUIS, can see who is currently available in the Math & Natural Science Center. the webiste is role based and includes three types of role: Admin, Tutor, and User(Student). tools used to make the web app are: React, Redux, Node.JS, Express, Tailwind, RippleUI, MongoDB, etc...",
     image: MathCenter,
     link: "https://mathcenter.pages.dev",
   },
   {
     name: "Smart Volunteers Group",
-    description: lorem,
+    description:
+      "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database. and also the system to manage the database is created by me. tools that are used in both are: Node.JS, ExpressJs, ReactJs, NextUI, TanStack Query, MongoDB, Tailwind, etc....",
     image: SVGImage,
     link: "https://svg-web.pages.dev",
   },
   {
     name: "Breaking Bad Page",
-    description: lorem,
+    description:
+      "A simple blog and quote generator from Breaking Bad web app, which I built in the beggining of my journey in Web Development. Tools that I used are: Node.JS, ExpressJs, MongoDB, ReactJS, Bootstrap, etc.....",
     image: BreakingB,
     link: "https://breakingb.pages.dev",
   },
   {
     name: "Task Manager",
-    description: lorem,
+    description:
+      "A web applicatoin which helps you to manage your daily tasks, based on time, categories. for this one just avoided to use any component libraries and I only made everything from scratch with tailwind. the tools that used to make this web app are: Node.JS, ExpresJs, MongoDB, ReactJS, Tailwind...",
     image: TaskssImg,
     link: "https://tasks-d5t.pages.dev",
   },
@@ -100,3 +105,32 @@ export const about: string[] = [
   "Location: I mostly live in Sulaymaniyah, I thrive in a dynamic tech community.",
   "Beyond Coding: Beyond the realm of coding, I delve into the realm of storytelling through movies and novels, exploring the artistry and narrative intricacies that captivate my imagination.",
 ];
+
+import { MdSimCardDownload } from "react-icons/md";
+
+export const socials = [
+  {
+    name: "github",
+    link: "linkedin.com/in/barham-khalid-khorshed-7abab8267/",
+    icon: (
+      <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
+    ),
+  },
+  {
+    name: "linkedin",
+    link: "https://github.com/barham3002",
+    icon: (
+      <BsLinkedin size={"30px"} className="transition-all hover:opacity-75" />
+    ),
+  },
+  {
+    name: "CV",
+    link: "sdfa",
+    icon: (
+      <MdSimCardDownload
+        size={"30px"}
+        className="transition-all hover:opacity-75"
+      />
+    ),
+  },
+] as const;

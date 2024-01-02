@@ -3,13 +3,11 @@
 import { sendEmail } from "@/actions";
 import HeaderSection from "@/lib/header-section";
 import { motion } from "framer-motion";
-import React, { InputHTMLAttributes } from "react";
+import React from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { toast } from "sonner";
-
-const initialState = { message: "", state: "" };
 
 export default function Contact() {
   return (
