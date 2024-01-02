@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 export const HackerTextEffect = ({
   children,
-  intervalDuration = 3,
+  intervalDuration = 2,
   glitchProbability = 0.05,
   className,
 }: any) => {

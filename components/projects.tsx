@@ -17,21 +17,21 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className=" flex scroll-mt-24 flex-col items-center justify-between gap-16 md:scroll-mt-12"
+      className=" flex scroll-mt-24 flex-col items-center justify-between gap-8 md:scroll-mt-12 md:gap-20"
     >
       <HeaderSection>My Projects</HeaderSection>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{
           opacity: 100,
-          transition: { delay: 0.8, duration: 0.6 },
+          transition: { delay: 0.7, duration: 0.6 },
         }}
         viewport={{
           once: true,
         }}
         className="w-5/6 md:w-3/4 "
       >
-        <Carousel>
+        <Carousel opts={{ align: "start", loop: true }}>
           <CarouselContent>
             {projects.map((project, index) => (
               <CarouselItem key={index}>
@@ -40,7 +40,7 @@ export default function Projects() {
                     <CardContent className="flex flex-col items-center justify-start gap-4 p-4 md:flex-col md:justify-start md:gap-16 md:p-8">
                       <h3 className="font-bold md:text-2xl">{project.name}</h3>
                       <Image
-                        className="rounded-lg border-2 grayscale transition-all delay-150 hover:border-white hover:grayscale-0 md:h-[17rem] md:w-[34rem]"
+                        className="rounded-lg border-2 grayscale transition-all hover:border-white hover:grayscale-0 md:h-[17rem] md:w-[34rem]"
                         src={project.image}
                         alt=""
                         quality={60}

@@ -20,7 +20,7 @@ export default function Intro() {
       id="home"
     >
       <h1 className="text-7xl font-bold">
-        <HackerTextEffect className="text-5xl md:text-7xl md:font-bold">
+        <HackerTextEffect className="text-4xl md:text-7xl md:font-bold">
           Hello, Friend.
         </HackerTextEffect>
       </h1>

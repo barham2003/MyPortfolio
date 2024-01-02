@@ -1,14 +1,15 @@
 import { IoHomeOutline } from "react-icons/io5";
 import { CgToolbox } from "react-icons/cg";
-import { RiListSettingsFill } from "react-icons/ri";
+import { TbTools } from "react-icons/tb";
+
 import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 
 export const sections = [
   { name: "Home", icon: <IoHomeOutline size="20px" />, ref: "#home" },
-  { name: "Skills", icon: <RiListSettingsFill size="20px" />, ref: "#skills" },
+  { name: "Skills", icon: <TbTools size="20px" />, ref: "#skills" },
   { name: "Projects", icon: <CgToolbox size="20px" />, ref: "#projects" },
-  { name: "About", icon: <IoPersonOutline size="20px" />, ref: "#" },
+  { name: "About", icon: <IoPersonOutline size="20px" />, ref: "#about" },
   { name: "Contact", icon: <MdOutlineEmail size="20px" />, ref: "#" },
 ] as const;
 
@@ -53,11 +54,20 @@ export const skills = [
 import MathCenter from "@/public/math.jpg";
 import SVGImage from "@/public/ssvg.jpg";
 import BreakingB from "@/public/breakingb.jpg";
+import TaskssImg from "@/public/taskss.jpg";
+import { StaticImageData } from "next/image";
 
-const lorem =
+const lorem: any =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quo illum? Temporibus eius eligendi consequuntur? Modi sunt at nostrum, commodi ratione voluptatibus eum molestiae libero assumenda nobis, aperiam officiis!";
 
-export const myProjects = [
+interface eachSkill {
+  name: string;
+  description: typeof lorem;
+  image: StaticImageData;
+  link: string;
+}
+
+export const myProjects: eachSkill[] = [
   {
     name: "Math Center",
     description: lorem,
@@ -76,4 +86,17 @@ export const myProjects = [
     image: BreakingB,
     link: "https://breakingb.pages.dev",
   },
-] as const;
+  {
+    name: "Task Manager",
+    description: lorem,
+    image: TaskssImg,
+    link: "https://tasks-d5t.pages.dev",
+  },
+];
+
+export const about: string[] = [
+  "Abilities: Driven by a passion for dynamic web solutions, I specialize in fast learning and creative problem-solving. Adapting swiftly to emerging technologies, I push the boundaries to deliver innovative solutions that redefine web development.",
+  "Education: Currently advancing my knowledge at 'American University of Iraq, Sulaymaniah', I'm committed to staying at the forefront of web development.",
+  "Location: I mostly live in Sulaymaniyah, I thrive in a dynamic tech community.",
+  "Beyond Coding: Beyond the realm of coding, I delve into the realm of storytelling through movies and novels, exploring the artistry and narrative intricacies that captivate my imagination.",
+];
