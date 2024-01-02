@@ -32,10 +32,8 @@ export default function Intro() {
             appealing
           </HackerTextEffect>{" "}
           and efficient websites. I merge technology and{" "}
-          <span className="bg-secondary/20 font-normal underline">
-            creativity
-          </span>{" "}
-          to deliver innovative digital solutions.{" "}
+          <span className="font-normal underline">creativity</span> to deliver
+          innovative digital solutions.{" "}
         </p>
 
         <div className=" flex flex-col items-start gap-2 py-10 md:hidden">

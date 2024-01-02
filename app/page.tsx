@@ -6,7 +6,7 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className=" flex h-[6000px] w-full">
+    <main className=" mb-28 flex w-full">
       <div className=" mt-28 flex w-full flex-col justify-start gap-56 px-8 text-center md:ml-[23rem] md:gap-[22rem] md:px-20 ">
         <Intro />
         <Skills />

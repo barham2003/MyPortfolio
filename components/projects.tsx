@@ -51,7 +51,9 @@ export default function Projects() {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptates maiores vitae veritatis eaque quas quibusdam
                       </p>
-                      <a href={project.link}>Go to it</a>
+                      <a target="_blank" href={project.link}>
+                        Go to it
+                      </a>
                     </CardContent>
                   </Card>
                 </div>
