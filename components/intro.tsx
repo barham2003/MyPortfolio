@@ -38,7 +38,7 @@ export default function Intro() {
 
         <div className=" flex flex-col items-start gap-2 py-10 md:hidden">
           <div className="mt-4 flex gap-4">
-            <div className="my-2 flex gap-2">
+            <div className="my-2 flex gap-4">
               {socials.map((social) => (
                 <a key={social.name} href={social.link} target="_blank">
                   {social.icon}
