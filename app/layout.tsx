@@ -2,6 +2,7 @@ import Sidebar from "@/components/sidebar";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Barham Khalid",
@@ -27,6 +28,7 @@ export default function RootLayout({
             <div className="relative">
               <Sidebar />
               {children}
+              <Toaster />
             </div>
           </ThemeProvider>
         </body>
