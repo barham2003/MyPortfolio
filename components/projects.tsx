@@ -35,7 +35,7 @@ export default function Projects() {
           <CarouselContent>
             {projects.map((project, index) => (
               <CarouselItem key={index}>
-                <div className="p-1/2">
+                <div className="p-1">
                   <Card>
                     <CardContent className="flex flex-col items-center justify-start gap-4 p-4 md:flex-col md:justify-start md:gap-16 md:p-8">
                       <h3 className="font-bold md:text-2xl">{project.name}</h3>
