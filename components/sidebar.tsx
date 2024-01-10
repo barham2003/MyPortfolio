@@ -16,9 +16,9 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-secondary bg-white md:fixed md:-left-2 md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r md:border-r-primary/20 md:py-10 dark:bg-[#09090b]"
+      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-secondary bg-white md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r md:border-r-primary/20 md:py-10 dark:bg-[#09090b]"
     >
-      <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center">
+      <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center ">
         <span className="font-bold  md:text-xl">Barham Khalid</span>
         <span className="text-lg opacity-45">Web Developer</span>
         <span className="flex items-center gap-2 text-lg opacity-45">
@@ -37,7 +37,7 @@ export default function Sidebar() {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-2 p-2 md:h-3/5 md:flex-col md:items-center md:gap-4 md:p-0">
+      <div className="flex flex-wrap items-center justify-center gap-2 p-2 md:h-3/5 md:flex-col md:flex-nowrap md:items-center md:gap-4 md:p-0">
         {sections.map((section) => (
           <Link
             href={section.ref}

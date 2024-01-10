@@ -25,7 +25,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <div className="relative">
+            <div className="relative flex w-full justify-center">
               <Sidebar />
               {children}
               <Toaster />
