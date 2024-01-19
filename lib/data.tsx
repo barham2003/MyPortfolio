@@ -95,7 +95,7 @@ export const myProjects: eachSkill[] = [
     description:
       "A web applicatoin which helps you to manage your daily tasks, based on time, categories. for this one I avoided to use any component libraries and I made everything from scratch only with tailwind. the tools that used to make this web app are: Node.JS, ExpresJs, MongoDB, ReactJS, Tailwind...",
     image: TaskssImg,
-    link: "https://tasks-d5t.pages.dev",
+    link: "https://manageanytasks.netlify.app/",
   },
 ];
 
