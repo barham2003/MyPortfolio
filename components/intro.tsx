@@ -56,7 +56,7 @@ export default function Intro() {
           </span>
           <span className="flex items-center gap-2 text-lg opacity-45">
             <IoLocation />
-            Iraq - Kirkuk
+            Iraq - Sulaymaniah
           </span>
         </div>
       </div>
