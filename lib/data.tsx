@@ -111,7 +111,7 @@ import { MdSimCardDownload } from "react-icons/md";
 export const socials = [
   {
     name: "github",
-    link: "https://github.com/baran6688",
+    link: "https://github.com/barham2003",
 
     icon: (
       <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
