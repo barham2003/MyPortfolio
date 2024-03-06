@@ -70,19 +70,19 @@ interface eachSkill {
 
 export const myProjects: eachSkill[] = [
   {
+    name: "Smart Volunteers Group",
+    description:
+      "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database in both languages Kurdish and English. and also the system to manage the database is provided as well. tools that are used in both are: NEXT.JS, ExpressJs, ReactJs, ShadCN, MongoDB, Zod, Tailwind, etc....",
+    image: SVGImage,
+    link: "https://smartvolunteersgroup.com/kur",
+  },
+  {
     name: "Math Center",
 
     description:
       "A web application which the students of AUIS, can see who is currently available in the Math & Natural Science Center. the webiste is role based and includes three types of role: Admin, Tutor, and User(Student). tools used to make the web app are: React, Redux, Node.JS, Express, Tailwind, RippleUI, MongoDB, etc...",
     image: MathCenter,
     link: "https://mathcenter.netlify.app",
-  },
-  {
-    name: "Smart Volunteers Group",
-    description:
-      "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database in both languages Kurdish and English. and also the system to manage the database is provided as well. tools that are used in both are: NEXT.JS, ExpressJs, ReactJs, ShadCN, MongoDB, Zod, Tailwind, etc....",
-    image: SVGImage,
-    link: "https://smartvolunteersgroup.vercel.app/kur",
   },
   {
     name: "Breaking Bad Page",
