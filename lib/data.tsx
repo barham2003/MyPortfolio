@@ -85,6 +85,7 @@ export const myProjects: eachSkill[] = [
     image: SpaceImg,
     link: "https://www.space.krd",
   },
+
   {
     name: "Univer Store",
     description:
