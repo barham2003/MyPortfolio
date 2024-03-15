@@ -55,8 +55,10 @@ import MathCenter from "@/public/math.jpg";
 import SVGImage from "@/public/ssvg.jpg";
 import BreakingB from "@/public/breakingb.jpg";
 import TaskssImg from "@/public/taskss.jpg";
+import SpaceImg from "@/public/space.jpg";
 import { StaticImageData } from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import Univer from "@/public/univer.jpg";
 
 const lorem: any =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quo illum? Temporibus eius eligendi consequuntur? Modi sunt at nostrum, commodi ratione voluptatibus eum molestiae libero assumenda nobis, aperiam officiis!";
@@ -75,6 +77,20 @@ export const myProjects: eachSkill[] = [
       "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database in both languages Kurdish and English. and also the system to manage the database is provided as well. tools that are used in both are: NEXT.JS, ExpressJs, ReactJs, ShadCN, MongoDB, Zod, Tailwind, etc....",
     image: SVGImage,
     link: "https://smartvolunteersgroup.com/kur",
+  },
+  {
+    name: "Space",
+    description:
+      "A software company which offers software development courses, tools, and services. and I have developed their website. tools used: Next.JS, ReactJs, ShadCN, DrizzleORM, PostgreSQL, Zod, Tailwind, etc....",
+    image: SpaceImg,
+    link: "https://www.space.krd",
+  },
+  {
+    name: "Univer Store",
+    description:
+      "A cloth shop which offers clothes, shoes, and accessories. and I have developed their website with Next.JS. ",
+    image: Univer,
+    link: "https://univer-store.vercel.app",
   },
   {
     name: "Math Center",
