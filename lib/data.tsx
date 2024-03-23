@@ -76,7 +76,7 @@ export const myProjects: eachSkill[] = [
     description:
       "A website where the members of Smart Volunteers Group, can directly see their points, activities, and details that are saved in the database in both languages Kurdish and English. and also the system to manage the database is provided as well. tools that are used in both are: NEXT.JS, ExpressJs, ReactJs, ShadCN, MongoDB, Zod, Tailwind, etc....",
     image: SVGImage,
-    link: "https://smartvolunteersgroup.com/kur",
+    link: "https://smartvolunteersgroup.com",
   },
   {
     name: "Space",
