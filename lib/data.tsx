@@ -59,6 +59,7 @@ import SpaceImg from "@/public/space.jpg";
 import { StaticImageData } from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Univer from "@/public/univer.jpg";
+import Sako from "@/public/sako.jpg";
 
 const lorem: any =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo quo illum? Temporibus eius eligendi consequuntur? Modi sunt at nostrum, commodi ratione voluptatibus eum molestiae libero assumenda nobis, aperiam officiis!";
@@ -71,6 +72,12 @@ interface eachSkill {
 }
 
 export const myProjects: eachSkill[] = [
+  {
+    name: "Sakoi Culture",
+    description:"A web application and API which generates 'Pendi Peshinan' and Kurdish Poetries, Tooks used are: Next.JS, ReactJS, DrizzleORM, TursoDB, LibSql, ShadCN, Tailwind....",
+    image:Sako,
+    link:"https://www.sakoi-culture.com"
+  },
   {
     name: "Smart Volunteers Group",
     description:
@@ -115,6 +122,7 @@ export const myProjects: eachSkill[] = [
     image: TaskssImg,
     link: "https://tasks-d5t.pages.dev",
   },
+
 ];
 
 export const about: string[] = [
