@@ -1,21 +1,13 @@
-"use client";
 import { HackerTextEffect } from "@/lib/hooks";
-import { motion } from "framer-motion";
-
 import { BiPhone } from "react-icons/bi";
 import { IoLocation } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 import { socials } from "@/lib/data";
+import AnimateSection from "./animate-section";
 
 export default function Intro() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: -200 }}
-      animate={{
-        opacity: 100,
-        y: 0,
-        transition: { type: "tween", delay: 1 },
-      }}
+    <AnimateSection
       className="flex scroll-mt-20 flex-col items-center justify-center md:gap-12"
       id="home"
     >
@@ -60,6 +52,6 @@ export default function Intro() {
           </span>
         </div>
       </div>
-    </motion.section>
+    </AnimateSection>
   );
 }
