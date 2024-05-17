@@ -18,14 +18,14 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning className="!scroll-smooth">
         <head />
-        <body className="debug-screens  selection:bg-primary/10">
+        <body className="selection:bg-primary/10">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <div className="flex w-full flex-col justify-center md:flex-row">
+            <div className="flex w-full  flex-col xl:flex-row">
               <Sidebar />
               {children}
               <Toaster />

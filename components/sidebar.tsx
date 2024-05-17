@@ -16,10 +16,10 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="xlw-1/5 xlflex-col xlflex-nowrap xlgap-4 xlborder-r xlborder-r-primary/20 xlpy-10 flex w-screen flex-wrap border-b-2 border-b-secondary bg-white dark:bg-[#09090b]"
+      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-between border-b-2 border-b-secondary bg-white px-3 dark:bg-[#09090b] xl:static xl:w-1/5 xl:flex-col xl:flex-nowrap  xl:gap-4 xl:border-r xl:border-r-primary/20 xl:py-10"
     >
-      <div className="xlflex xlh-1/5 xlflex-col xlitems-center hidden ">
-        <span className="xltext-xl  font-bold">Barham Khalid</span>
+      <div className="hidden xl:flex xl:flex-col xl:items-center ">
+        <span className="font-bold  xl:text-xl">Barham Khalid</span>
         <span className="text-lg opacity-45">Web Developer</span>
         <span className="flex items-center gap-2 text-lg opacity-45">
           Sulaymaniah
@@ -37,19 +37,19 @@ export default function Sidebar() {
           ))}
         </div>
       </div>
-      <div className="xlh-3/5 xlflex-col xlflex-nowrap xlitems-center xlgap-4 xlp-0 flex flex-wrap items-center gap-2 p-2">
+      <div className="flex flex-wrap items-center gap-2 p-2 xl:flex-col xl:flex-nowrap xl:items-center xl:gap-4 xl:p-0">
         {sections.map((section) => (
           <Link
             href={section.ref}
-            className=" xlw-5/6 xljustify-center xlgap-2 flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50  "
+            className="flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 xl:w-5/6 xl:justify-center xl:gap-2  "
             key={section.name}
           >
             {section.icon}
-            <span className="xlblock hidden">{section.name}</span>
+            <span className="hidden xl:block">{section.name}</span>
           </Link>
         ))}
       </div>
-      <div className="xlrelative xlh-1/5 xlflex-col xljustify-end flex items-center">
+      <div className="flex items-center xl:relative  xl:flex-col xl:justify-end">
         <ModeToggle />
       </div>
     </motion.div>

@@ -6,8 +6,8 @@ import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="flex max-h-screen w-full max-w-[1990px] overflow-scroll">
-      <div className="mt-28 flex  w-full flex-col justify-start gap-[22rem] px-8 text-center xl:px-20 ">
+    <main className="mx-auto flex max-h-screen w-full max-w-[1990px] xl:overflow-auto">
+      <div className="mt-28 flex  w-full flex-col justify-start gap-[22rem] px-8 text-center">
         <Intro />
         <Skills />
         <Projects />

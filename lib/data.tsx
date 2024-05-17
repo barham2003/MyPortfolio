@@ -24,7 +24,6 @@ import { SiTailwindcss } from "react-icons/si";
 import { SiPrisma } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import { FiFramer } from "react-icons/fi";
-import { SiReactquery } from "react-icons/si";
 import { SiSocketdotio } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
 import { DiPostgresql } from "react-icons/di";
@@ -43,7 +42,6 @@ export const skills = [
   { name: "Prisma", icon: <SiPrisma /> },
   { name: "TypeScript", icon: <SiTypescript /> },
   { name: "Framer", icon: <FiFramer /> },
-  { name: "TS Query", icon: <SiReactquery /> },
   { name: "Sokect.io", icon: <SiSocketdotio /> },
   { name: "Supabase", icon: <RiSupabaseFill /> },
   { name: "PostgreSql", icon: <DiPostgresql /> },
@@ -74,9 +72,10 @@ interface eachSkill {
 export const myProjects: eachSkill[] = [
   {
     name: "Sakoi Culture",
-    description:"A web application and API which generates 'Pendi Peshinan' and Kurdish Poetries, Tooks used are: Next.JS, ReactJS, DrizzleORM, TursoDB, LibSql, ShadCN, Tailwind....",
-    image:Sako,
-    link:"https://www.sakoi-culture.com"
+    description:
+      "A web application and API which generates 'Pendi Peshinan' and Kurdish Poetries, Tooks used are: Next.JS, ReactJS, DrizzleORM, TursoDB, LibSql, ShadCN, Tailwind....",
+    image: Sako,
+    link: "https://www.sakoi-culture.com",
   },
   {
     name: "Smart Volunteers Group",
@@ -122,7 +121,6 @@ export const myProjects: eachSkill[] = [
     image: TaskssImg,
     link: "https://tasks-d5t.pages.dev",
   },
-
 ];
 
 export const about: string[] = [
