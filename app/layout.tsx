@@ -16,16 +16,16 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning>
+      <html lang="en" suppressHydrationWarning className="!scroll-smooth">
         <head />
-        <body className="selection:bg-primary/10">
+        <body className="debug-screens  selection:bg-primary/10">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            <div className="relative flex w-full justify-center">
+            <div className="flex w-full flex-col justify-center md:flex-row">
               <Sidebar />
               {children}
               <Toaster />

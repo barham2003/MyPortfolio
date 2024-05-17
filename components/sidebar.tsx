@@ -16,10 +16,10 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-around border-b-2 border-b-secondary bg-white md:h-full md:w-1/5 md:flex-col md:flex-nowrap md:gap-4 md:border-r md:border-r-primary/20 md:py-10 dark:bg-[#09090b]"
+      className="xlw-1/5 xlflex-col xlflex-nowrap xlgap-4 xlborder-r xlborder-r-primary/20 xlpy-10 flex w-screen flex-wrap border-b-2 border-b-secondary bg-white dark:bg-[#09090b]"
     >
-      <div className="hidden md:flex md:h-1/5 md:flex-col md:items-center md:justify-center ">
-        <span className="font-bold  md:text-xl">Barham Khalid</span>
+      <div className="xlflex xlh-1/5 xlflex-col xlitems-center hidden ">
+        <span className="xltext-xl  font-bold">Barham Khalid</span>
         <span className="text-lg opacity-45">Web Developer</span>
         <span className="flex items-center gap-2 text-lg opacity-45">
           Sulaymaniah
@@ -37,19 +37,19 @@ export default function Sidebar() {
           ))}
         </div>
       </div>
-      <div className="flex flex-wrap items-center justify-center gap-2 p-2 md:h-3/5 md:flex-col md:flex-nowrap md:items-center md:gap-4 md:p-0">
+      <div className="xlh-3/5 xlflex-col xlflex-nowrap xlitems-center xlgap-4 xlp-0 flex flex-wrap items-center gap-2 p-2">
         {sections.map((section) => (
           <Link
             href={section.ref}
-            className=" flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50 md:w-5/6 md:justify-center md:gap-2  "
+            className=" xlw-5/6 xljustify-center xlgap-2 flex items-center rounded-md bg-secondary/80 p-2 text-xl font-bold transition-all hover:bg-secondary/50  "
             key={section.name}
           >
             {section.icon}
-            <span className="hidden md:block">{section.name}</span>
+            <span className="xlblock hidden">{section.name}</span>
           </Link>
         ))}
       </div>
-      <div className="flex items-center md:relative md:h-1/5 md:flex-col md:justify-end">
+      <div className="xlrelative xlh-1/5 xlflex-col xljustify-end flex items-center">
         <ModeToggle />
       </div>
     </motion.div>

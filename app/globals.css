@@ -73,13 +73,11 @@
   body {
     @apply bg-background text-foreground;
   }
-}
+  html {
+    font-family: "Raleway";
+  }
 
-html {
-  font-family: "Raleway";
-  @apply !scroll-smooth;
-}
-
-h2 {
-  @apply !text-4xl md:!text-6xl md:!font-extrabold;
+  h2 {
+    @apply text-4xl xl:!text-6xl xl:!font-extrabold;
+  }
 }
