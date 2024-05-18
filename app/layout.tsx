@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html lang="en" suppressHydrationWarning className="!scroll-smooth">
+      <html lang="en" suppressHydrationWarning>
         <head />
         <body className="relative selection:bg-primary/10">
           <ThemeProvider
