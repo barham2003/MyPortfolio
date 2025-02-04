@@ -55,11 +55,9 @@ export const skills = [
 import MathCenter from "@/public/math.jpg";
 import SVGImage from "@/public/ssvg.jpg";
 import BreakingB from "@/public/breakingb.jpg";
-import TaskssImg from "@/public/taskss.jpg";
 import SpaceImg from "@/public/space.jpg";
-import StaticImageData from "next/image";
+import type { StaticImageData } from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import Univer from "@/public/univer.jpg";
 import Sako from "@/public/sako.jpg";
 
 const lorem: any =
