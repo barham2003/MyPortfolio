@@ -16,7 +16,7 @@ export default function Sidebar() {
         type: "tween",
         duration: 0.4,
       }}
-      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-between border-r-2 border-r-secondary bg-white px-3 dark:bg-[#09090b] xl:static xl:w-1/5 xl:flex-col xl:flex-nowrap  xl:gap-4 xl:border-r xl:border-r-primary/20 xl:py-10"
+      className="fixed left-0 top-0 z-10 flex w-screen flex-wrap justify-between border-b-2 border-b-secondary bg-white px-3 dark:bg-[#09090b] xl:static xl:w-1/5 xl:flex-col xl:flex-nowrap  xl:gap-4 xl:border-r xl:border-r-primary/20 xl:py-10"
     >
       <div className="hidden xl:flex xl:flex-col xl:items-center ">
         <span className="font-bold  xl:text-xl">Barham Khalid</span>

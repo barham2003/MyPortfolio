@@ -2,18 +2,15 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CgToolbox } from "react-icons/cg";
 import { TbTools } from "react-icons/tb";
 
-import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 
 export const sections = [
   { name: "Home", icon: <IoHomeOutline size="20px" />, ref: "#home" },
   { name: "Skills", icon: <TbTools size="20px" />, ref: "#skills" },
   { name: "Projects", icon: <CgToolbox size="20px" />, ref: "#projects" },
-  { name: "About", icon: <IoPersonOutline size="20px" />, ref: "#about" },
   { name: "Contact", icon: <MdOutlineEmail size="20px" />, ref: "#contact" },
 ] as const;
 
-import { FaReact } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaNodeJs } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
@@ -21,30 +18,36 @@ import { SiExpress } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { DiMysql } from "react-icons/di";
 import { SiTailwindcss } from "react-icons/si";
-import { SiPrisma } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
-import { FiFramer } from "react-icons/fi";
-import { SiSocketdotio } from "react-icons/si";
-import { RiSupabaseFill } from "react-icons/ri";
+import { SiSvelte, SiTypescript } from "react-icons/si";
 import { DiPostgresql } from "react-icons/di";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { FaVuejs } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiFfmpeg } from "react-icons/si";
+import { SiDeno } from "react-icons/si";
+import { FaPython } from "react-icons/fa";
 
 export const skills = [
   { name: "JavaScript", icon: <IoLogoJavascript /> },
-  { name: "ReactJS", icon: <FaReact /> },
+  { name: "Java", icon: <FaJava /> },
+  { name: "Python", icon: <FaPython /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
   { name: "NodeJS", icon: <FaNodeJs /> },
+  { name: "Deno", icon: <SiDeno /> },
+  { name: "SvelteKit", icon: <SiSvelte /> },
+  { name: "Nuxt", icon: <FaVuejs /> },
   { name: "NextJs", icon: <SiNextdotjs /> },
+  { name: "Nest", icon: <SiNestjs /> },
   { name: "Express", icon: <SiExpress /> },
   { name: "MongoDB", icon: <BiLogoMongodb /> },
   { name: "MySql", icon: <DiMysql /> },
-  { name: "Tailwind", icon: <SiTailwindcss /> },
-  { name: "Prisma", icon: <SiPrisma /> },
-  { name: "TypeScript", icon: <SiTypescript /> },
-  { name: "Framer", icon: <FiFramer /> },
-  { name: "Sokect.io", icon: <SiSocketdotio /> },
-  { name: "Supabase", icon: <RiSupabaseFill /> },
   { name: "PostgreSql", icon: <DiPostgresql /> },
+  { name: "Tailwind", icon: <SiTailwindcss /> },
+  { name: "Docker", icon: <FaDocker /> },
+  { name: "FFMPEG", icon: <SiFfmpeg /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "GitHub", icon: <FaGithub /> },
 ] as const;
@@ -54,7 +57,7 @@ import SVGImage from "@/public/ssvg.jpg";
 import BreakingB from "@/public/breakingb.jpg";
 import TaskssImg from "@/public/taskss.jpg";
 import SpaceImg from "@/public/space.jpg";
-import { StaticImageData } from "next/image";
+import StaticImageData from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Univer from "@/public/univer.jpg";
 import Sako from "@/public/sako.jpg";
@@ -91,14 +94,6 @@ export const myProjects: eachSkill[] = [
     image: SpaceImg,
     link: "https://www.space.krd",
   },
-
-  {
-    name: "Univer Store",
-    description:
-      "A cloth shop which offers clothes, shoes, and accessories. and I have developed their website with Next.JS. ",
-    image: Univer,
-    link: "https://univer-store.vercel.app",
-  },
   {
     name: "Math Center",
 
@@ -113,13 +108,6 @@ export const myProjects: eachSkill[] = [
       "A simple blog and quote generator from Breaking Bad web app, which I built in the beggining of my journey in Web Development. Tools that used are: Node.JS, ExpressJs, MongoDB, ReactJS, Bootstrap, etc.....",
     image: BreakingB,
     link: "https://breakingb.pages.dev",
-  },
-  {
-    name: "Task Manager",
-    description:
-      "A web applicatoin which helps you to manage your daily tasks, based on time, categories. for this one I avoided to use any component libraries and I made everything from scratch only with tailwind. the tools that used to make this web app are: Node.JS, ExpresJs, MongoDB, ReactJS, Tailwind...",
-    image: TaskssImg,
-    link: "https://tasks-d5t.pages.dev",
   },
 ];
 
@@ -138,7 +126,10 @@ export const socials = [
     link: "https://github.com/barham2003",
 
     icon: (
-      <BsGithub size={"30px"} className="transition-all hover:opacity-75" />
+      <BsGithub
+        size={"30px"}
+        className="transition-all hover:opacity-75"
+      />
     ),
   },
   {

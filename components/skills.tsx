@@ -1,7 +1,6 @@
 import { skills } from "@/lib/data";
 import HeaderSection from "@/lib/header-section";
 import AnimatedList from "./animated-list";
-import AnimateSection from "./animate-section";
 
 export default function Skills() {
   return (
